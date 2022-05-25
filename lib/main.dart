@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'RenderBox',
+      title: 'Image',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('RenderBox'),
+          title: const Text('Image'),
           elevation: 0,
           foregroundColor: Colors.cyanAccent,
           backgroundColor: Colors.black,
