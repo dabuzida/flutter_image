@@ -10,8 +10,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Image',
-      home: AAA(),
+      title: 'RenderBox',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('RenderBox'),
+          elevation: 0,
+          foregroundColor: Colors.cyanAccent,
+          backgroundColor: Colors.black,
+          centerTitle: true,
+        ),
+        backgroundColor: Colors.greenAccent[100],
+        body: const AAA(),
+      ),
     );
   }
 }
@@ -30,15 +40,8 @@ class AAA extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Image'),
-        elevation: 0,
-        foregroundColor: Colors.cyanAccent,
-        backgroundColor: Colors.black,
-        centerTitle: true,
-      ),
-      body: ListView(children: [
+    return ListView(
+      children: [
         Container(
           width: 1000,
           height: 1500,
@@ -57,7 +60,7 @@ class AAA extends StatelessWidget {
             ],
           ),
         ),
-      ]),
+      ],
     );
   }
 }
