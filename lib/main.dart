@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
           centerTitle: true,
         ),
-        backgroundColor: Colors.greenAccent[100],
+        // backgroundColor: Colors.greenAccent[100],
         body: const AAA(),
       ),
     );
@@ -40,23 +41,52 @@ class AAA extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        Container(
-          width: 1000,
-          height: 1500,
-          decoration: BoxDecoration(
-            border: Border.all(color: Colors.purpleAccent, width: 2),
-          ),
-          // width: double.infinity,
-          // height: double.infinity,
-          child: Column(
+    return Column(
+      children: <Widget>[
+        Expanded(
+          child: ListView(
             children: <Widget>[
-              Image.asset('01bird-3.jpg'),
-              Image.asset('birdd.jpg'),
-              Image.asset('images/birdd.jpg', height: 300),
-              Image.asset('images/birDDD.jpg', height: 300),
-              Image.asset('images/birddD.jpg', height: 300),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  // Image.asset('01bird-3.jpg'),
+                  // Image.asset('birdd.jpg'),
+                  // Image.asset('images/birDDD.jpg', height: 300),
+                  // Image.asset('images/birddD.jpg', height: 300),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    width: 30.0,
+                    height: 30.0,
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    width: 30.0,
+                    height: 10.0,
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    width: 10.0,
+                    height: 30.0,
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    width: 15.0,
+                    height: 25.0,
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
