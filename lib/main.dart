@@ -107,6 +107,7 @@ class AAA extends StatelessWidget {
                   SizedBox(height: 5),
                   SizedBox(height: 5),
                   SizedBox(height: 5),
+                  //git commit --amend
                   // Container(
                   //   decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
                   //   child: SvgPicture.asset('logo.svg'),
