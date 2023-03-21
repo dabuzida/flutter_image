@@ -104,6 +104,9 @@ class AAA extends StatelessWidget {
                     child: SvgPicture.asset('tttt2.svg'),
                   ),
                   SizedBox(height: 5),
+                  SizedBox(height: 5),
+                  SizedBox(height: 5),
+                  SizedBox(height: 5),
                   // Container(
                   //   decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
                   //   child: SvgPicture.asset('logo.svg'),
