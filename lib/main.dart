@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -61,7 +63,7 @@ class AAA extends StatelessWidget {
                   Container(
                     width: 30.0,
                     height: 30.0,
-                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    decoration: BoxDecoration(border: Border.all(color: Colors.red)),
                     child: SvgPicture.asset('test.svg'),
                   ),
                   SizedBox(height: 5),
@@ -85,6 +87,37 @@ class AAA extends StatelessWidget {
                     decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
                     child: SvgPicture.asset('test.svg'),
                   ),
+                  SizedBox(height: 5),
+                  Divider(color: Colors.red),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('test.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('tttt.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                    child: SvgPicture.asset('tttt2.svg'),
+                  ),
+                  SizedBox(height: 5),
+                  // Container(
+                  //   decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                  //   child: SvgPicture.asset('logo.svg'),
+                  // ),
+                  // SizedBox(height: 5),
+                  // Container(
+                  //   decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                  //   child: SvgPicture.asset('logo2.svg'),
+                  // ),
+                  // SizedBox(height: 5),
+                  // Container(
+                  //   decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
+                  //   child: SvgPicture.asset('logo.svg'),
+                  // ),
                 ],
               ),
             ],
